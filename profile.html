@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile — Sample</title>
+	<style>
+		body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:2rem;background:#f7f9fc;color:#0b2545}
+		.card{max-width:720px;margin:0 auto;background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 6px 18px rgba(11,37,69,0.06)}
+		.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:4px solid #e6eef8}
+		.header{display:flex;gap:1rem;align-items:center}
+		.name{font-size:1.25rem;font-weight:600}
+		.meta{color:#6b7a90;font-size:0.9rem}
+		.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+		.section{background:#fbfdff;padding:0.75rem;border-radius:6px}
+		.btn{display:inline-block;padding:0.5rem 0.75rem;background:#0b66ff;color:#fff;border-radius:6px;text-decoration:none}
+	</style>
+</head>
+<body>
+	<main class="card">
+		<div class="header">
+			<img class="avatar" src="https://placekitten.com/200/200" alt="Avatar">
+			<div>
+				<div class="name">Alex Morgan</div>
+				<div class="meta">Frontend Developer — San Francisco, CA</div>
+				<div style="margin-top:0.5rem"><a class="btn" href="#contact">Contact</a></div>
+			</div>
+		</div>
+
+		<p style="margin-top:1rem">Passionate developer focused on building accessible, performant web applications. Experienced with HTML, CSS, JavaScript, and modern frameworks.</p>
+
+		<div class="grid">
+			<div class="section">
+				<strong>Skills</strong>
+				<ul>
+					<li>JavaScript / TypeScript</li>
+					<li>React / Vue</li>
+					<li>CSS, SASS, Tailwind</li>
+				</ul>
+			</div>
+			<div class="section">
+				<strong>Experience</strong>
+				<p class="meta">3+ years building web apps at startups and agencies.</p>
+			</div>
+		</div>
+
+		<section id="contact" style="margin-top:1rem" class="section">
+			<strong>Contact</strong>
+			<form style="margin-top:0.5rem;display:flex;flex-direction:column;gap:0.5rem">
+				<input type="text" placeholder="Your name" />
+				<input type="email" placeholder="Your email" />
+				<textarea rows="3" placeholder="Message"></textarea>
+				<button type="submit" class="btn">Send</button>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
